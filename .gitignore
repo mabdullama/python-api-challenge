@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Ignoring the api key
+config.py
+
 # Distribution / packaging
 .Python
 build/
