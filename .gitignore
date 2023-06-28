@@ -7,7 +7,7 @@ __pycache__/
 *.so
 
 # Ignoring the api key
-config.py
+api_keys.py
 
 # Distribution / packaging
 .Python
