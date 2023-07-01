@@ -1,6 +1,6 @@
 # python-api-challenge
 
-# Weather Analysis
+# Part 1: Weather Analysis
 
 This repository contains a Python script for analyzing weather data using the OpenWeatherMap API. The script retrieves weather data for a list of randomly generated cities and performs various analyses and visualizations.
 
@@ -40,11 +40,8 @@ The plots are generated using matplotlib and saved as PNG images in the `output_
 
 The script performs linear regression analysis on the relationships between weather variables and latitude. It calculates the regression line and displays the equation along with the R-value on the plots.
 
-## Conclusion
 
-This script provides a comprehensive analysis of weather data by retrieving, analyzing, and visualizing the relationship between weather variables and latitude. The generated plots and regression analysis can help in understanding the impact of latitude on various weather factors.
-
-# Hotel Finder
+# Part 2: Hotel Finder
 
 This repository contains a Python script for finding hotels near cities based on specific weather conditions. The script utilizes the Geoapify API to search for hotels within a certain radius of latitude and longitude coordinates.
 
@@ -56,11 +53,9 @@ The following dependencies are required to run the script:
 - pandas
 - requests
 
-The Geoapify API key is stored in the `api_keys.py` file, which should be included in the repository.
-
 ## Load the Data
 
-The script loads a CSV file created in a previous step (Part 1) into a pandas DataFrame. The CSV file contains weather data for various cities.
+The script loads a CSV file created in a previous step (Part 1) called "cities.csv". The CSV file contains weather data for various cities.
 
 ## Step 1: Create a Map
 
@@ -78,9 +73,7 @@ A new DataFrame called `hotel_df` is created to store information about the hote
 
 For each city in the `hotel_df` DataFrame, the script uses the Geoapify API to find the first hotel located within 10,000 meters of the city's coordinates. The API request includes parameters such as limit, radius, and API key. The hotel name is stored in the "Hotel Name" column of the `hotel_df` DataFrame.
 
-## Conclusion
 
-This script provides a convenient way to find hotels near cities based on specific weather conditions. It utilizes the Geoapify API and visualizes the results on a map. The generated map and DataFrame can be used to explore and analyze hotel options for different weather conditions.
 
 
 
